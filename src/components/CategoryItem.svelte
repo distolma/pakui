@@ -21,17 +21,20 @@ const {
     id={id}
     checked={checked}
     onchange={onCheckboxChange}
-    class="h-4 w-4 shrink-0 rounded border-gray-400 text-indigo-600 focus:ring-indigo-500"
+    class="h-4 w-4 shrink-0 rounded border-gray-400 text-indigo-600 focus:ring-indigo-500 dark:border-gray-600 dark:focus:ring-indigo-600"
   />
   <label
     for={id}
-    class={['flex-grow cursor-pointer', checked && 'text-gray-500 line-through']}
+    class={[
+      'flex-grow cursor-pointer',
+      checked && 'text-gray-500 line-through dark:text-gray-400',
+    ]}
   >
     {text}
   </label>
   <button
     onclick={onRemoveItem}
-    class="ml-2 shrink-0 rounded px-1.5 py-0.5 text-xs text-red-500 opacity-50 hover:bg-red-100 hover:opacity-100"
+    class="ml-2 shrink-0 rounded px-1.5 py-0.5 text-xs text-red-500 opacity-50 hover:bg-red-100 hover:opacity-100 dark:text-red-400 dark:hover:bg-red-900/50"
     aria-label={`Remove ${text}`}
   >
     &times;

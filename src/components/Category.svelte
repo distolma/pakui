@@ -17,7 +17,9 @@ function handleKeyPress(event: KeyboardEvent) {
 </script>
 
 <section class="flex break-inside-avoid flex-col gap-3 py-6 text-sm">
-  <h2 class="border-b border-gray-300 pb-1 font-semibold uppercase">
+  <h2
+    class="border-b border-gray-300 pb-1 font-semibold uppercase dark:border-gray-600"
+  >
     {title}:
   </h2>
 
@@ -28,7 +30,7 @@ function handleKeyPress(event: KeyboardEvent) {
       <input
         type="text"
         onkeypress={handleKeyPress}
-        class="w-full border-b border-gray-300 py-1 text-sm outline-none focus:border-indigo-500"
+        class="w-full border-b border-gray-300 bg-transparent py-1 text-sm text-gray-800 outline-none focus:border-indigo-500 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400"
         placeholder="Додати пункт..."
         aria-label={`Add item to ${title}`}
       />
