@@ -16,7 +16,7 @@ function handleKeyPress(event: KeyboardEvent) {
 }
 </script>
 
-<section class="flex break-inside-avoid flex-col gap-3 text-sm">
+<section class="flex break-inside-avoid flex-col gap-3 py-6 text-sm">
   <h2 class="border-b border-gray-300 pb-1 font-semibold uppercase">
     {title}:
   </h2>

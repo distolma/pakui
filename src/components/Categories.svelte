@@ -42,7 +42,7 @@ function handleRemoveItem(itemId: string) {
 }
 </script>
 
-<div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+<div class="columns-3xs gap-12">
   {#each categories as category (category.id)}
     <Category title={category.title} onAddItem={handleAddItem(category.id)}>
       {#each category.items as item (item.id)}
